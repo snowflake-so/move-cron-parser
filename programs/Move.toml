@@ -1,0 +1,25 @@
+[package]
+name = "snowflake-automation"
+version = "0.0.0"
+
+[addresses]
+std = "0x1"
+aptos_std = "0x1"
+# Snowflake Automation packages
+scheduler = "0x1"
+snowflake_automation = "0x1"
+
+[dependencies.MoveStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/move-stdlib"
+rev = "main"
+
+[dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-stdlib"
+rev = "devnet"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-framework"
+rev = "devnet"
