@@ -1,9 +1,9 @@
-module scheduler::parser {
+module cron::parser {
     use std::vector::Self;
 
-    use scheduler::string_utils;
-    use scheduler::vector_utils;
-    use scheduler::crontab_error::crontab_error;
+    use cron::string_utils;
+    use cron::vector_utils;
+    use cron::crontab_error::crontab_error;
 
     const ECRONTAB_INVALID_FORMAT : u64 = 1;
     const ECRONTAB_WRONG_PARSE_OUTPUT : u64 = 2;
@@ -72,8 +72,6 @@ module scheduler::parser {
             // stepped, eg. */2 or 1-45/3
             let stepped = string_utils::split(part, &b"/");
             let stepped_len = vector::length(&stepped);
-
-            std::debug::print(&stepped);
 
             // ranges, eg. 1-30
             let numerator_stepped = vector::borrow(&stepped, 0);

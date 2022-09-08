@@ -1,4 +1,4 @@
-module scheduler::string_utils {
+module cron::string_utils {
  use std::vector::Self;
 
  public fun ascii_number_vec_to_u64(num: vector<u8>) : u64{

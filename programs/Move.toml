@@ -5,9 +5,7 @@ version = "0.0.0"
 [addresses]
 std = "0x1"
 aptos_std = "0x1"
-# Snowflake Automation packages
-scheduler = "0x1"
-snowflake_automation = "0x1"
+cron = "0x1"
 
 [dependencies.MoveStdlib]
 git = "https://github.com/aptos-labs/aptos-core.git"

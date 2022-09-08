@@ -1,4 +1,4 @@
-module scheduler::vector_utils {
+module cron::vector_utils {
  use std::vector;
  use std::error;
  

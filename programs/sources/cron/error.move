@@ -1,4 +1,4 @@
-module scheduler::crontab_error {
+module cron::crontab_error {
     use std::error;
     
     const CRONTAB_ERROR : u64 = 0xF;
